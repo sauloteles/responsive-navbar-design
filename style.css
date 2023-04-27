@@ -15,6 +15,7 @@ body {
 .header__content{
   margin: auto;
   max-width: 90%;
+  margin-top: 12px;
 }
 .header__name{
   font-size: 24px;

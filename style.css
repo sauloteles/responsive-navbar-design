@@ -15,7 +15,7 @@ body {
 .header__content{
   margin: auto;
   max-width: 90%;
-  margin-top: 12px;
+  padding:1rem 0;
 }
 .header__name{
   font-size: 24px;
@@ -30,26 +30,25 @@ body {
 
 .header__link{
  list-style: none;
- text-align: center;
- cursor: pointer;
+ color: white;
+ text-decoration: none;
  line-height: 40px;
+ display: flex;
+ justify-content: center;
 }
 .header__link:hover{
   color: rgb(255, 183, 0);
 }
-.header__btn{
-  width: 100%;
-  border: none;
-  height: 30px;
-  background-color: white;
+.style--btn{
+  width: 90%;
   border-radius: 20px;
   background-color: rgb(255, 183, 0);
-  color: white;
-  font-size: 16px;
+  margin: auto;
   cursor: pointer;
-}
-.header__btn:hover{
- background-color: rgb(246, 190, 35);
+  }
+.style--btn:hover{
+  scale: 1.05;
+  color: white;
 }
 .header--flex{
   display: flex;
@@ -63,7 +62,9 @@ body {
 .is--none{
   display: none;
 }
-
+li{
+  list-style: none;
+}
 
 @media screen and (min-width:768px) {
   .is--none{
@@ -88,10 +89,14 @@ body {
   }
   .header__link{
     line-height: unset;
-    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    
   }
+ 
   .header__links{
     display: flex;
+    gap: 20px;
   }
 
    .header__btn{
@@ -100,7 +105,7 @@ body {
 
    .header__btn-2{
     border: none;
-    padding: 0.3rem 0.5rem;
+    padding: 0.4rem 1rem;
     background-color: white;
     border-radius: 20px;
     background-color: rgb(255, 183, 0);
@@ -108,4 +113,14 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
+  
+.header__btn-2:hover{
+  scale: 1.05;
+}
+.style--btn{
+  display: none;
+} 
+.nav--on{
+  height: 0px;
+}
 }
